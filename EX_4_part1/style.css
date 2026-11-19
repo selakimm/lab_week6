@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.content span {
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.small {
+  display: inline-block;
+  background-color: tomato;
+  font-size: 14px;
+}
+
+.big {
+  display: none;
+  background-color: yellowgreen;
+  font-size: 32px;
+}
+
+@media only screen and (min-width: 600px) {
+  .small {
+    display: none;
+  }
+
+  .big {
+    display: inline-block;
+  }
+}
